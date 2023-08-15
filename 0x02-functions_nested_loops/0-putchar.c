@@ -1,7 +1,9 @@
 #include "main.h"
+
 /**
  * main
- * /
+ * main
+ */
  
  int main(void)
  {
