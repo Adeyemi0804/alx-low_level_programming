@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * main
- * main
+ * main - print _putchar
+ * is written by Adeyinka
+ * Return: 0
  */
+
 
 int main(void)
 {
