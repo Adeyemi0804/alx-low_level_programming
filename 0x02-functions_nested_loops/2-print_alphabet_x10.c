@@ -1,11 +1,9 @@
 #include "main.h"
 
-
 /**
- * main - check the code.
- *
- * Return: Always 0.
- */
+* print_alphabet_x10 - Prints the lowercase alphabet 10 times
+* followed by a new line each time.
+*/
 
 void print_alphabet_x10(void)
 {
