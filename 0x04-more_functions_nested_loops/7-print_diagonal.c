@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - Prints a diagonal line of backlashes with indentation
- * @n; input variables
+ * @n: input variables
  *
  * Return: void
  */
