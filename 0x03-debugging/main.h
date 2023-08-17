@@ -1,2 +1,11 @@
-VimCrypt~03!j_Lÿí®·AeÂÎ‹ŒêJê9àµİ_Cã‡¦"ËŞÅhV{§à2ÆoS„šÏ›İ °cg)©ZËã¿->äF¶ ÏÔ˜eİ…¥úå>§‰Ü?`§+»û~“9¥!³_N#9Ï}…{x[»:"@}“²áÒåñÈ—Ş
-~¸‡Ç¨0Õ.åa ´y ¹ğ:hFFü¢×‡¦åûCò•ÿR—	JëÀçQoP¬<ûÿœ3KÏw“”Nö2.=~`ƒ`bŠÖ T•#‰’ü°sÒ¤ƒ	ø ğ/ÍäøÉÆõ6hjvUNäØåÔ"c
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h>
+
+void positive_or_negative(int i);
+int largest_number(int a, int b, int c);
+int convert_day(int month, int day);
+void print_remaining_days(int month, int day, int year);
+
+#endif /* MAIN_H */
