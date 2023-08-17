@@ -1,26 +1,25 @@
 #include "main.h"
 
 /**
- * print_diagonal - Draws a diagonal line using the character '\'.
- * @n: The number of times '\ should be printed.
+ * print_diagonal - Prints a diagonal line of backslashes with indentation
+ * @n: input variables
+ *
+ * Return: void
  */
+
 void print_diagonal(int n)
 {
-	int spaces, count;
+        int i, j;
 
-	if (n <= 0)
-	{
-		_putchar('\n');
-		return;
-	}
-
-	for (count = 0; count < n; count++)
-	{
-		for (spaces = 0; spaces < count; spaces++)
-	{
-		_putchar(' ');
-	}
-	_putchar('\\');
-	_putchar('\n');
-	}
+        if (n <= 0)
+                _putchar('\n');
+        for (i = 0; i < n; i++)
+        {
+                for (j = 0; j < i; j++)
+                {
+                        _putchar(' ');
+                }
+                _putchar('\\');
+                _putchar('\n');
+        }
 }
