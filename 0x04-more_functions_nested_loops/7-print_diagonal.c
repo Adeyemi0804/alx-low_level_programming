@@ -1,25 +1,25 @@
 #include "main.h"
 
 /**
- * print_diagonal - Prints a diagonal line of backslashes with indentation
- * @n: input variables
+ * print_diagonal - Prints a diagonal line of backlashes with indentation
+ * @n; input variables
  *
  * Return: void
  */
 
 void print_diagonal(int n)
 {
-        int i, j;
+	in i, j;
 
-        if (n <= 0)
-                _putchar('\n');
-        for (i = 0; i < n; i++)
-        {
-                for (j = 0; j < i; j++)
-                {
-                        _putchar(' ');
-                }
-                _putchar('\\');
-                _putchar('\n');
-        }
+	if (n <= 0)
+		_putchar('\n');
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < 1; j++)
+		{
+			_putchar(' ');
+		}
+		_putchar('\\');
+		_putchar('\n');
+	}
 }
