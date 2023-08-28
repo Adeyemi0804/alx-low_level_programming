@@ -1,21 +1,22 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+*_strchr - Returns a pointer to the first occurrence
+*of the character c in the string s, or NULL if the
+*character is not found
+*
+*@s:string targeted
+*@c:character targeted
+*
+*Return: returns pointer to first occcurence of c
+*/
+char *_strchr(char *s, char c)
 {
-    char *s = "hello";
-    char *f;
+	int i;
 
-    f = _strchr(s, 'l');
-
-    if (f != NULL)
-    {
-        printf("%s\n", f);
-    }
-    return (0);
+	for (i = 0; (s[i] != c) && (s[i] != '\0'); i++)
+		;
+	if (s[i] == c)
+		return (s + i);
+	else
+		return (NULL);
 }
