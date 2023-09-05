@@ -1,63 +1,35 @@
-#include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
-
-/*
- * _strlen - Calculate the length of a string.
- *
- * This function calculates the length of a string by counting the number
- * of characters until the null terminator is encountered.
- *
- * @s: Pointer to the string.
- * Return: The length of the string.
- */
-
-int _strlen(char *s)
-{
-	int a;
-
-	for (a = 0; s[a] != '\0'; a++)
-	{
-	}
-	return (a);
-}
+#include <stdlib.h>
+#include "main.h"
 
 
 /**
- * _strdup - Duplicate a string.
+ * _strdup - duplicate to new memory space location
  *
- * This function duplicates a string by allocating memory for the duplicate
- * and copying the characters from the input string.
+ * @str: char
  *
- * @str: Pointer to the string to be duplicated.
- *
- * Return: Pointer to the duplicated string.
+ * Return: 0
  */
 
 
 char *_strdup(char *str)
 {
-	char *ptr;
-	int size;
-	int x;
+	char *aaa;
+	int i, r = 0;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
+	i = 0;
+	while (str[i] != '\0')
+		i++;
 
-	size = _strlen(str) + 1;
-	ptr = malloc(size * sizeof(char));
+	aaa = malloc(sizeof(char) * (i + 1));
 
-	x = 0;
-	while (x < size)
-	{
-		if (ptr == NULL)
-		{
-			return (NULL);
-		}
-		ptr[x] = str[x];
-		x++;
-	}
-	return (ptr);
+	if (aaa == NULL)
+		return (NULL);
+
+	for (r = 0; str[r]; r++)
+		aaa[r] = str[r];
+
+	return (aaa);
 }
