@@ -3,11 +3,13 @@
 #include <stdio.h>
 
 /*
- * _strlen - function to return length of a function
+ * _strlen - Calculate the length of a string.
  *
- * @s: char type
+ * This function calculates the length of a string by counting the number
+ * of characters until the null terminator is encountered.
  *
- * Return: length of string
+ * @s: Pointer to the string.
+ * Return: The length of the string.
  */
 
 int _strlen(char *s)
@@ -22,11 +24,14 @@ int _strlen(char *s)
 
 
 /**
- * *_strdup - the function to return the pointer to the string
+ * _strdup - Duplicate a string.
  *
- *  @str: The pointer to string array input
+ * This function duplicates a string by allocating memory for the duplicate
+ * and copying the characters from the input string.
  *
- *  Return: pointer to string created
+ * @str: Pointer to the string to be duplicated.
+ *
+ * Return: Pointer to the duplicated string.
  */
 
 
