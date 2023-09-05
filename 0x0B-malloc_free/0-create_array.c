@@ -28,7 +28,7 @@ char *create_array(unsigned int size, char c)
 	i = 0;
 	while (i < size)
 	{
-		a[i] =c;
+		a[i] = c;
 		i++;
 	}
 	a[i] = '\0';
