@@ -3,4 +3,4 @@ fndef OBJECT_LIKE_MACRO_H
 
 #define SIZE 1024
 
-#endiif
+#endif
